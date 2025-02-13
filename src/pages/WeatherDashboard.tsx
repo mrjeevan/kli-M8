@@ -23,11 +23,8 @@ const WeatherDashboard = () => {
   } = UseGeolocation();
 
   const weatherQuery = useWeatherQuery(coordinates);
-  console.log("weatherQuery", weatherQuery);
   const forecastQuery = useForecastQuery(coordinates);
-  console.log("forecastQuery", forecastQuery);
   const locationQuery = useReverseGeocodeQuery(coordinates);
-  console.log("locationQuery", locationQuery);
 
   const handleRefresh = () => {
     getLocation();
@@ -37,8 +34,6 @@ const WeatherDashboard = () => {
       locationQuery.refetch();
     }
   };
-
-  console.log("coordinates", coordinates);
 
   if (locationLoading) {
     return <WeatherSkelton />;

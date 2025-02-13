@@ -8,8 +8,6 @@ interface ICurrentWeatherProps {
 }
 
 const CurrentWeather = ({ data, locationName }: ICurrentWeatherProps) => {
-  console.log("CurrentWeather data", data);
-  console.log("CurrentWeather locationName", locationName);
   const {
     weather: [currentWeather],
     main: { temp, feels_like, temp_min, temp_max, humidity },
