@@ -14,6 +14,9 @@ const Header = () => {
             alt="logo"
             className="h-14"
           />
+          <p className="text-muted-foreground leading-3 font-bold text-xs tracking-[5px] ">
+            Kli-M8
+          </p>
         </Link>
 
         <div className="flex gap-4">
